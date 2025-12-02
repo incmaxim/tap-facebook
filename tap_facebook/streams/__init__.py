@@ -7,6 +7,7 @@ from tap_facebook.streams.ad_labels import AdLabelsStream
 from tap_facebook.streams.ad_videos import AdVideos
 from tap_facebook.streams.ads import AdsStream
 from tap_facebook.streams.adsets import AdsetsStream
+from tap_facebook.streams.adrules_library import AdRulesLibraryStream
 from tap_facebook.streams.campaign import CampaignStream
 from tap_facebook.streams.creative import CreativeStream
 from tap_facebook.streams.custom_audiences import CustomAudiences
@@ -20,6 +21,7 @@ __all__ = [
     "AdsInsightStream",
     "AdsStream",
     "AdsetsStream",
+    "AdRulesLibraryStream",
     "CampaignStream",
     "CreativeStream",
     "CustomAudiences",

@@ -14,6 +14,7 @@ from tap_facebook.streams import (
     AdAccountsStream,
     AdImages,
     AdLabelsStream,
+    AdRulesLibraryStream,
     AdsetsStream,
     AdsInsightStream,
     AdsStream,
@@ -35,7 +36,9 @@ STREAM_TYPES = [
     CustomAudiences,
     AdImages,
     AdVideos,
+    AdRulesLibraryStream,
 ]
+
 
 DEFAULT_INSIGHT_REPORT = {
     "name": "default",
@@ -67,7 +70,7 @@ class TapFacebook(Tap):
             "api_version",
             th.StringType,
             description="The API version to request data from.",
-            default="v22.0",
+            default="v24.0",
         ),
         th.Property(
             "account_id",
