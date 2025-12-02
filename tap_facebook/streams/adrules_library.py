@@ -51,12 +51,6 @@ class AdRulesLibraryStream(IncrementalFacebookStream):
     replication_method = REPLICATION_INCREMENTAL
     replication_key = "updated_time"
 
-    PropertiesList = PropertiesList
-    Property = Property
-    ObjectType = ObjectType
-    StringType = StringType
-    ArrayType = ArrayType(StringType)
-
     schema = PropertiesList(
         Property("id", StringType),
         Property("name", StringType),
